@@ -4,10 +4,6 @@ namespace UI.Console
 {
     public class ConsoleManager : IConsoleManager
     {
-        public ConsoleManager()
-        {
-            System.Console.CursorVisible = false;
-        }
         public void WriteLine(string? value)
         {
             System.Console.WriteLine(value);
@@ -24,7 +20,7 @@ namespace UI.Console
             System.Console.ResetColor();
         }
 
-        private ConsoleColor GetConsoleColor(Colors colors)
+        private static ConsoleColor GetConsoleColor(Colors colors)
         {
             return colors == Colors.Green ? ConsoleColor.Green : ConsoleColor.Red;
         }
