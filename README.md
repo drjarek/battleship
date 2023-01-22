@@ -1,5 +1,7 @@
 # BATTLESHIP GAME
 
+.net7 is required to run the game.
+
 ## How to run game via script
 Execute run_game.ps1 script from root folder
 

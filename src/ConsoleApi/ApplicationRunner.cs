@@ -54,12 +54,12 @@ namespace ConsoleApi
                 playerBoard = playerBoardManager.LoadBoard(status?.HumanStatus?.Battleships, status?.CpuStatus?.FiredMissiles);
                 cpuBoard = cpuBoardManager.LoadBoard(status?.CpuStatus?.Battleships, status?.HumanStatus?.FiredMissiles);
                 
-                consoleManager.WriteLine("CPU");
+                consoleManager.WriteLine("Player");
                 tableWriter.Write(playerBoard);
                 
                 consoleManager.WriteLine(string.Empty);
                 
-                consoleManager.WriteLine("Player");
+                consoleManager.WriteLine("CPU");
                 tableWriter.Write(cpuBoard);
                 
                 consoleManager.WriteLine(string.Empty);
