@@ -12,7 +12,7 @@ execute 'dotnet build --configuration Release'
 2) publish project
 execute 'dotnet publish --configuration Release'
 
-3) execute './src/ConsoleApi/bin/Release/net5.0/ConsoleApi'
+3) execute './src/ConsoleApi/bin/Release/net7.0/ConsoleApi'
 
 ## How to play game
 The program will create a 10x10 grid, and place several ships on the grid at random with the following sizes:
